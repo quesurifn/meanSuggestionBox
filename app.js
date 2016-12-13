@@ -8,9 +8,9 @@ var passport = require('passport');
 
 mongoose.connect('mongodb://master:1234@ds159767.mlab.com:59767/news');
 
-require('./models/Posts');
-require('./models/Comments');
-require('./models/Users');
+require('./models/posts');
+require('./models/comments');
+require('./models/users');
 
 require('./config/passport');
 
