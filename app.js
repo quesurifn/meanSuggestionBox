@@ -5,14 +5,12 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var passport = require('passport');
-
-mongoose.connect('mongodb://master:1234@ds159767.mlab.com:59767/news');
-
 require('./models/posts');
 require('./models/comments');
 require('./models/users');
-
 require('./config/passport');
+
+mongoose.connect('mongodb://master:1234@ds159767.mlab.com:59767/news');
 
 var routes = require('./routes/index');
 
