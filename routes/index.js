@@ -1,12 +1,12 @@
 var express = require('express');
-var router = express.Router();
 var jwt = require('express-jwt');
 var passport = require('passport');
 var mongoose = require('mongoose');
-var Post = mongoose.model('post');
-var Comment = mongoose.model('comment');
-var User = mongoose.model('user');
+var Post = mongoose.model('Post');
+var Comment = mongoose.model('Comment');
+var User = mongoose.model('User');
 
+var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
